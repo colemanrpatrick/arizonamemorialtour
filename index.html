@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>arizona memorial tours</title>
+    <title>arizona memorial tour</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
@@ -367,11 +367,10 @@
     </div>
     <!-- ========== end ========== -->
   </main>
-    <!-- <script type="text/javascript" src="scroll.js"></script> -->
     <script type="text/javascript" src="jquery.lazy-master/jquery.lazy.min.js"></script>
     <script type="text/javascript" src="jquery.lazy-master/jquery.lazy.plugins.min.js"></script>
     <script type="text/javascript" src="toggle.js"></script>
-    <script type="text/javascript" src="checkpoint.js"></script>
+    <!-- <script type="text/javascript" src="checkpoint.js"></script> -->
     <script type="text/javascript" src="main.js"></script>
     <script>
     var $eventListener = (function () {
@@ -384,7 +383,6 @@
     }());
     var menuCont = document.getElementById("main-nav");
     var menuBtn = document.getElementById("menu-btn");
-
     document.addEventListener($eventListener, function (event) {
         if (!menuCont.contains(event.target) && !visible(menuCont)) {
             menuCont.className = "main-nav";
@@ -401,7 +399,6 @@
         idToggle(this.id,'active');
       }
     }
-
     for (var i = 0 ; i < wrapper.length; i++) {
       wrapper[i].addEventListener('click',toggleOutside,false);
     }
